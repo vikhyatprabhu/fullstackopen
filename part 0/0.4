@@ -1,0 +1,12 @@
+title Note Post Sequence
+
+Browser->Server: Http Post method to /new_note with the note text and timestamp on form submit
+Server->Browser: Http Response 302 and redirect request to /notes
+Browser->Server: Http Get to /notes
+Server->Browser: Html code
+Browser->Server: Http GET main.js,main.css and data.json
+Server->Browser:main.js,main.css ,data.json
+
+note over Browser
+Browser calls the event handler to construct the notes list
+end note
