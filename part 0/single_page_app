@@ -1,0 +1,8 @@
+title Single Page application
+
+Browser->Server: Http GET on /spa
+Server->Browser: spa.js and a single html file with a form 
+
+note over Browser
+Form in the html has no action specified
+end note

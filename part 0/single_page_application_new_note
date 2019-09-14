@@ -1,0 +1,14 @@
+title Single Page application new note
+
+note over Browser
+On submission of form default action is prevented 
+and the list is added with the content
+of the new note 
+end note
+
+note over Browser
+Rerenders the list
+end note
+
+Browser->Server: Http POST on /new_note_spa with content sent as json with the name and timestamp 
+Server->Browser: Http 201 created
