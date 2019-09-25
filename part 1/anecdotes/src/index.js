@@ -7,7 +7,7 @@ const App = (props) => {
  
   
   const handleClick=()=>{
-    let current=Math.floor(Math.random() * Math.floor(props.anecdotes.length))
+    let current=Math.floor(Math.random() * props.anecdotes.length)
     return setSelected(current)
   }
 
