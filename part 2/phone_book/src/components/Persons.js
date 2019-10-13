@@ -3,7 +3,10 @@ import React from "react";
 
 const Persons=(props)=>{
   return props.persons.map(person => 
-    <p key={person.name}> {person.name} {person.number} </p>
+    <div key={person.name}>
+    <p > {person.name} {person.number} </p> 
+    <button onClick={()=>props.handleDelete(person.id)}>Delete</button>
+    </div>
   );
 }
 
