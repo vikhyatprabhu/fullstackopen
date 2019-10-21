@@ -1,0 +1,11 @@
+POST  http://localhost:3003/api/blogs 
+Content-Type: application/json
+
+{
+    "title":"My dummy blog",
+    "author":"Vikhyat Prabhu",
+    "url": "http://dev.to/fullstackopen-vikhyat",
+    "likes": 25
+}
+
+GET http://localhost:3003/api/blogs 
